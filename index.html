@@ -1,32 +1,171 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Software Engineer</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        html, body {
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            background-color: #525659;
-        }
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-            display: block;
-        }
-    </style>
+    <title>Trần Huy Toàn | Backend Engineer</title>
+    
+    <!-- Google Fonts: Space Grotesk for headings, Manrope for body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Phosphor Icons (Sleeker than FontAwesome) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 <body>
-    <iframe src="CV%20Software%20Engineer.pdf" title="CV Software Engineer">
-        <p>Trình duyệt của bạn không hỗ trợ hiển thị PDF trực tiếp. Vui lòng <a href="CV%20Software%20Engineer.pdf">tải xuống file PDF tại đây</a>.</p>
-    </iframe>
+    <div class="layout">
+        <!-- Left Panel (Sticky) -->
+        <aside class="sidebar">
+            <div class="sidebar-content">
+                <div class="profile">
+                    <img src="avatar.JPG" alt="Trần Huy Toàn" class="avatar">
+                    <h1 class="name">Trần Huy Toàn</h1>
+                    <p class="title">Backend Software Engineer</p>
+                    <p class="tagline">Backend-focused Software Engineer, continuously learning and building with .NET and Java.</p>
+                </div>
+
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#about" class="active">01 <span class="nav-text">About</span></a></li>
+                        <li><a href="#experience">02 <span class="nav-text">Experience</span></a></li>
+                        <li><a href="#projects">03 <span class="nav-text">Selected Work</span></a></li>
+                    </ul>
+                </nav>
+
+                <div class="social-links">
+                    <a href="https://github.com/tranhuytoan161104" target="_blank" aria-label="GitHub"><i class="ph ph-github-logo"></i></a>
+                    <a href="mailto:tranhuytoan1611@gmail.com" aria-label="Email"><i class="ph ph-envelope-simple"></i></a>
+                    <a href="tel:0966315141" aria-label="Phone"><i class="ph ph-phone"></i></a>
+                    <a href="CV%20Software%20Engineer.pdf" target="_blank" class="cv-link">Resume <i class="ph ph-arrow-up-right"></i></a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Right Panel (Scrollable) -->
+        <main class="content">
+            <!-- About Section -->
+            <section id="about" class="section">
+                <h2 class="sr-only">About</h2>
+                <div class="text-block">
+                    <p>
+                        I am a <strong>Backend Software Engineer</strong> with a strong foundation in <strong>Object-Oriented Programming (OOP)</strong> and <strong>Design Patterns</strong>. My primary tech stack revolves around the <strong>.NET ecosystem</strong> (C#, ASP.NET Core, EF Core), alongside practical experience in Java and Spring Boot.
+                    </p>
+                    <p>
+                        I am continuously learning and striving to write clean, maintainable code. Whether it is solving concurrency issues or designing RESTful APIs, my focus is always on understanding the core problems and applying reliable, practical solutions.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience" class="section">
+                <h2 class="section-title">Experience</h2>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <span class="date">Jan 2025 — Sep 2025</span>
+                        <div class="card-title">
+                            <h3>Software Engineer Intern</h3>
+                            <span class="company">FPT Information System</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>Participated in backend development for enterprise applications. Learned practical implementations of deployment pipelines and gained valuable insights by exploring the codebase of an Open Banking system.</p>
+                        <ul class="skills-list">
+                            <li>Java Spring Boot</li>
+                            <li>Docker</li>
+                            <li>Azure CI/CD</li>
+                            <li>Git</li>
+                            <li>Agile</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="section">
+                <h2 class="section-title">Selected Work</h2>
+
+                <!-- Project 1 -->
+                <a href="https://github.com/tranhuytoan161104/BurstSlot.git" target="_blank" class="card project-card">
+                    <div class="card-header">
+                        <span class="date">2026</span>
+                        <div class="card-title">
+                            <h3>BurstSlot <i class="ph ph-arrow-up-right link-icon"></i></h3>
+                            <span class="company">Slot Reservation System</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>A personal project built to study and practice backend challenges like high-concurrency handling and data integrity.</p>
+                        <ul class="bullet-list">
+                            <li>Resolved lost update anomalies using <strong>Atomic SQL Updates</strong> in PostgreSQL.</li>
+                            <li>Implemented <strong>Redis</strong> to proactively handle traffic spikes.</li>
+                            <li>Explored data consistency handling during system crashes using the <strong>Transactional Outbox Pattern</strong> and <strong>Kafka</strong>.</li>
+                        </ul>
+                        <ul class="skills-list">
+                            <li>Java Spring Boot</li>
+                            <li>PostgreSQL</li>
+                            <li>Redis</li>
+                            <li>Apache Kafka</li>
+                            <li>k6 Load Testing</li>
+                        </ul>
+                    </div>
+                </a>
+
+                <!-- Project 2 -->
+                <div class="card project-card">
+                    <div class="card-header">
+                        <span class="date">2025 — 2026</span>
+                        <div class="card-title">
+                            <h3>School Operation System</h3>
+                            <span class="company">Capstone Project</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>Contributed to a comprehensive school management system as part of a capstone project. Focused heavily on backend API development and security.</p>
+                        <ul class="bullet-list">
+                            <li>Built and structured RESTful APIs using <strong>ASP.NET Core</strong>.</li>
+                            <li>Implemented user authentication and authorization using <strong>JWT</strong>.</li>
+                            <li>Collaborated with team members to integrate backend services with the frontend interface.</li>
+                        </ul>
+                        <ul class="skills-list">
+                            <li>C#</li>
+                            <li>.NET 8</li>
+                            <li>ASP.NET Core</li>
+                            <li>EF Core</li>
+                            <li>SQL Server</li>
+                            <li>Git</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Education Section -->
+            <section id="education" class="section pb-large">
+                <h2 class="section-title">Education</h2>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <span class="date">2022 — 2026</span>
+                        <div class="card-title">
+                            <h3>B.S. Software Engineering</h3>
+                            <span class="company">FPT University</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>Spearheaded academic projects as Team Leader, ensuring code quality and timely delivery. Mastered core concepts in Data Structures, Algorithms, and Software Architecture.</p>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <p>Designed and built with clean code. <br>Hanoi, Vietnam &copy; 2026</p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
